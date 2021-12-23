@@ -1,5 +1,9 @@
 
-
+apartment_type=int(input())
+corporate=int(input())
+bore=int(input())
+no_of_guests=int(input())
+new_guests=int(input())
 
 class Bill:
     def __init__(self,type_of_apartment,corporate_water_ratio,bore_water_ratio):
@@ -79,15 +83,14 @@ class TotalBill(Bill):
 
 
 
-bills=TotalBill(type_of_apartment=3,corporate_water_ratio=2,bore_water_ratio=1,guests=4)
+bills=TotalBill(type_of_apartment=apartment_type,corporate_water_ratio=corporate,bore_water_ratio=bore,guests=no_of_guests)
 
 
 
 
 bills.flat_members()
-bills.add_guests(new_guests=1)
+bills.add_guests(new_guests=new_guests)
 bills.water_for_guests()
-
 
 
 
